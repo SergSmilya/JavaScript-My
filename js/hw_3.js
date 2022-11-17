@@ -75,18 +75,188 @@
 // console.log(credentials)
 
 
-// task 10/41
-                            ???????????????????????????
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-const keys = [];
-const values = [];
-// Change code below this line
+// // task 10/41
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
 
-for (const key in apartment) {
-    console.log(key);
-    console.log(apartment[key]);
-};
+// for (const key in apartment) {
+
+//   keys.push(key);
+//   values.push(apartment[key]);
+
+// };
+
+// console.log(keys);
+// console.log(values);
+
+
+// task 11 / 41
+
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+//   if (apartment.hasOwnProperty(key)) {
+//     keys.push(key);
+//   values.push(apartment[key]);
+//   };
+  
+
+//   // Change code above this line
+// };
+
+// console.log(keys);
+// console.log(values);
+
+// task 11 / 41
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//   const keys = Object.keys(object);
+//   console.log(keys.length);
+ 
+//   propCount = keys.length;
+//   // // Change code above this line
+//   return propCount;
+//   console.log(propCount);
+// };
+
+
+// countProps({ name: "Mango", age: 2 });
+
+
+// task 13 / 41
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// };
+// console.log(values)
+
+
+// task 16 / 41
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const values = Object.values(salaries);
+//   for (const i of values) {
+//     // console.log(i);
+//     totalSalary += i;
+//     console.log(totalSalary);
+//   }
+//   // Дуже важливо писати консоль лог перед ретерн!!!
+//   console.log(totalSalary); 
+//   return totalSalary;
+
+// };
+
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
+
+// Object.keys()
+// Object.values()
+
+
+// task 17 / 41
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+// console.table(colors);
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// for (const color of colors) {
+//   console.log(color.rgb);
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// };
+
+// console.log(hexColors); 
+// console.log(rgbColors); 
+ 
+// task 17 / 41
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   for (const product of products) {
+
+//     if ((product.name).includes(productName)) {
+//       console.log(product.price);
+//       // return product.price;
+//     };
+
+//   };
+//   return null;
+// };
+// getProductPrice("Grip");
+// getProductPrice();
+
+
+// task 19 / 41
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// // console.table(products)
+
+// function getAllPropValues(propName) {
+//   const enter = [];
+
+// for (const product of products) {
+//   // console.log(product);
+//   // const enterName = Object.keys(product);
+//   // console.log(enterName);
+  
+
+//   if (product.hasOwnProperty(propName)) {
+//     enter.push(product[propName]);
+//   };
+// };
+
+//   console.log(enter);
+//   return enter;
+// };
+
+// getAllPropValues("price");
+
+
+// task 19 / 41
+
