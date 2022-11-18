@@ -258,5 +258,61 @@
 // getAllPropValues("price");
 
 
-// task 19 / 41
+// task 20 / 41
 
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//     let totalPrice = 0;
+
+//     for (const product of products) {
+//         console.log(product.name);
+//         if (product.name === productName) {
+//             // totalPrice = `${product.name}, ${product.price * product.quantity}`;
+//             totalPrice = product.price * product.quantity;
+
+//         };
+
+// };   
+
+//     console.log(totalPrice);
+// };
+
+// // calculateTotalPrice("Blaster");
+// calculateTotalPrice("Radar");
+
+// task 25 / 41
+// Для деструктуризації властивостей вкладених об'єктів використовуються ті самі принципи, що й в трьох попередніх вправах.
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
+
+// const {today:{high:highToday, low:lowToday, icon:todayIcon="https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}, 
+// tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }} = forecast;
+
+
+// task 25 / 41
