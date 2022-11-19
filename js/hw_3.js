@@ -315,4 +315,40 @@
 // tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }} = forecast;
 
 
-// task 25 / 41
+// task 30 / 41
+
+// Напиши функцію makeTask(data) яка приймає один параметр data - об'єкт з наступними властивостями.
+
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, 
+// не змінюючи напряму параметр data.
+// У новому об'єкті повинна бути властивість completed, 
+// значення якої зберігається в однойменній локальній змінній.
+
+// В параметрі data гарантовано буде тільки властивість text, 
+// а інші дві, category і priority, можуть бути відсутніми.Тоді, 
+// в новому об'єкті завдання, у властивостях category і priority повинні бути значення за замовчуванням, 
+// що зберігаються в однойменних локальних змінних.
+
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+    let newObject = {};
+    const keys = Object.keys(data);
+    console.log(keys);
+    const value = Object.values(data);
+    console.log(value);
+    
+    for (const key of keys) {
+    console.log(data[key]);
+        
+    }
+    return newObject;
+};
+
+// makeTask({});
+makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
