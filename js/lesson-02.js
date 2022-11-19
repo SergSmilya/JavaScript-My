@@ -7,11 +7,31 @@
 // `ECMAScript`, то показуй alert з рядком `"Правильно!"`, в іншому випадку -
 // `"Не знаєте? ECMAScript!"`
 
+// const question = prompt("Яка офіційна назва JavaScript?");
+// const answer = `ECMAScript`;
+
+
+// if (question === answer) {
+//     alert("Правильно!");
+// } else {
+//     alert("Не знаєте? ECMAScript!");
+// };
+
 // ## Example 2 - Відображення часу (if...else)
 
 // Напиши скрипт для відображення годин та хвилин у консолі браузера у вигляді рядка
 // формату `"14 г. 26 хв."`. Якщо значення змінної `minutes` дорівнює `0`, то
 // виводь рядок `"14 г."`, без хвилин.
+
+// const hour = '14 г.';
+// const minutes = '26';
+
+// if (minutes === '0') {
+//     console.log(`${hour}`);
+// } else {
+// console.log(`${hour} ${minutes}`);
+// };
+
 
 // ```js
 // const hours = 14;
@@ -33,6 +53,17 @@
 // в консоль рядок `"Це нуль"`. Якщо передали від'ємне число, у консолі
 // повинен бути рядок `"Це негативне число"`.
 
+// const question = Number(prompt('Enter Number'));
+
+
+// if (question > 0) {
+//     console.log("Це позитивне число");
+// } else if (question === 0) {
+//     console.log("Це нуль");
+// } else if (question < 0) {
+//     console.log("Це негативне число");
+// }
+
 // ```js
 // const userInput = prompt('Введіть число');
 // ```
@@ -43,10 +74,15 @@
 // значення більше `100`, то виведи в консоль максимальне з них. В протилежному
 // випадку у консолі повинна бути сума значення `b` та числа 512.
 
-// ```js
-// const a = 120;
+
+// const a = 190;
 // const b = 180;
-// ```
+
+// if (a > 100 && b > 100) {
+//     console.log(Math.max(a,b));
+// } else {
+//     console.log(b + 512);
+// };
 
 // ## Example 5 - Форматування посилання (endsWith)
 
@@ -57,7 +93,7 @@
 // ```js
 // let link = 'https://my-site.com/about';
 // // Пиши код нижче за цей рядок
-
+// if (link !== (link + "/")) link = link + '/';
 // // Пиши код вище за цей рядок
 // console.log(link);
 // ```
@@ -102,6 +138,14 @@
 
 // ```js
 // const hours = 10;
+
+// if (hours < 17) {
+//     console.log('Pending');
+// } else if (hours >= 17 && hours <= 24) {
+//     console.log('Expires');
+// } else if (hours > 24) {
+//     console.log('Overdue');
+// };
 // ```
 
 // ## Example 9 - Дедлайн здачі проекту (if...else)
@@ -124,15 +168,19 @@
 // Виконай рефакторинг коду задачі номер 5 використовуючи `switch`.
 
 // ```js
-// const daysUntilDeadline = 5;
+// const daysUntilDeadline = 3;
 
-// if (daysUntilDeadline === 0) {
-//   console.log('Сьогодні');
-// } else if (daysUntilDeadline === 1) {
-//   console.log('Завтра');
-// } else if (daysUntilDeadline === 2) {
-//   console.log('Післязавтра');
-// } else {
+// switch (daysUntilDeadline) {
+//     case 0:
+//         console.log('Сьогодні');
+//         break;
+//     case 1:
+//         console.log('Завтра');
+//         break;
+//     case 2:
+//         console.log('Післязавтра');
+//         break;
+//     default:
 //   console.log('Дата у майбутньому');
 // }
 // ```
@@ -145,6 +193,13 @@
 // ```js
 // const max = 100;
 // const min = 20;
+// let arr = [];
+// arr.push(max, min);
+// console.log(arr)
+
+// for (let i = min; i <= max; i += 5) {
+//     console.log(i);
+// }
 // ```
 
 // ## Example 12 - Введення користувача та розгалуження
@@ -160,3 +215,23 @@
 
 // - Якщо введено пароль `"Я адмін"`, то вивести рядок `"Здрастуйте!"`
 // - Інакше виводити рядок `"Невірний пароль"`
+
+// const question = prompt('Login');
+// console.log(question);
+// const answer = 'Admin';
+// let pass = '';
+
+// if (question === answer.toLowerCase()) {
+//     pass = prompt('Pasword');
+// } else if (question === null) {
+//     console.log("Скасовано");
+// } else {
+//     console.log("Я вас не знаю");
+// };
+
+// switch (pass) {
+//     case 'I admin':
+//         console.log('Hello!');
+//         break;
+//     default: console.log("Невірний пароль");
+// }

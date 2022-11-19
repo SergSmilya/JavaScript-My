@@ -53,15 +53,13 @@
 
 // Індекс маси тіла необхідно округлити до однієї цифри після коми;
 
-let weight = '88,3';
-// console.log(Number.parseFloat(weight));
-console.log(weight.indexOf(',').replace('.'));
+// let weight = '88,3';
+// weight = Number(weight.replace(',', '.'));
 
-let height = '1.75';
-console.log(Number(height));
+// let height = '1.75';
+// height = Number(height);
 
-
-const bmi = 0;
+// const bmi = Number((weight/height**2).toFixed(1));
 // console.log(bmi); // 28.8
 
 // !==========================
@@ -127,7 +125,10 @@ const bmi = 0;
 // !==========================
 
 // Example 9 - Значення за замовчуванням та оператор нульового злиття
-// Отрефактори код так, щоб у змінну value присвоювалося значення змінної incomingValue, якщо воно не рівне undefined або null. В іншому випадку має присвоюватися значення defaultValue. Перевір роботу скрипта для наступних значень змінної incomingValue: null, undefined, 0, false. Використовуй оператор ?? (nullish coalescing operator).
+// Отрефактори код так, щоб у змінну value присвоювалося значення змінної incomingValue, 
+// якщо воно не рівне undefined або null.В іншому випадку має присвоюватися значення defaultValue.
+// Перевір роботу скрипта для наступних значень змінної incomingValue: null, undefined, 0, false.
+// Використовуй оператор ?? (nullish coalescing operator).
 
 // ??? const incomingValue = 5;
 // const defaultValue = 10;
@@ -139,7 +140,7 @@ const bmi = 0;
 // Example 10 - Оператор % та методи рядків
 // Напиши скрипт, який переведе значення totalMinutes (кількість хвилин) в рядок у форматі годин та хвилин HH:MM.
 
-// ??? 70 покаже 01:10
+// 70 покаже 01:10
 // 450 покаже 07:30
 // 1441 покаже 24:01
 // const totalMinutes = 70;
