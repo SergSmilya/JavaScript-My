@@ -332,23 +332,172 @@
 // в новому об'єкті завдання, у властивостях category і priority повинні бути значення за замовчуванням, 
 // що зберігаються в однойменних локальних змінних.
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-    let newObject = {};
-    const keys = Object.keys(data);
-    console.log(keys);
-    const value = Object.values(data);
-    console.log(value);
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//     let newObject = {};
+//     const keys = Object.keys(data);
+//     console.log(keys);
+//     const value = Object.values(data);
+//     console.log(value);
     
-    for (const key of keys) {
-    console.log(data[key]);
+//     for (const key of keys) {
+//     console.log(data[key]);
         
-    }
-    return newObject;
-};
+//     }
+//     return newObject;
+// };
 
-// makeTask({});
-makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
+// // makeTask({});
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
+
+// task 31 / 41
+
+// function add(...args) {
+//   console.log(args);
+//   let Summ = 0;
+//   for (const arg of args) {
+//     Summ += arg;
+//     console.log(Summ);
+//   };
+//   return Summ;
+// };
+
+// add(15, 27);
+
+// task 32 / 41
+
+// function addOverNum(a, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+
+//     if (arg > a) {
+//     total += arg;
+//     };
+//   }
+//   console.log(total);
+//   return total;
+//   // Change code above this line
+// }
+
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+
+
+// task 33 / 41
+
+// function findMatches(Massiv, ...args) {
+//   const matches = []; 
+
+//   for (const element of Massiv) {
+//     // console.log(element);
+//     if (args.includes(element)) {
+//       matches.push(element);
+//     }
+    
+//   }
+
+//     console.log(matches)
+//   return matches;
+// };
+
+// // function findMatches() {
+// //   console.log(arguments)
+// //   const matches = []; 
+
+// //     // console.log(matches)
+// //   return matches;
+// // };
+
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7);
+
+// task 35 / 41
+
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // console.log(bookShelf.books.splice((bookShelf.books.indexOf(oldName)), 1, newName));
+//     // bookShelf.books.splice((bookShelf.books.indexOf(oldName)), 1, newName);
+//   // bookShelf.books.splice((bookShelf.books.indexOf(oldName)), 1, newName);
+//   //   return bookShelf;
+//     // bookShelf.books = bookShelf.books.splice((bookShelf.books.indexOf(oldName)), 1, newName);
+//     // return bookShelf.books;
+
+//     this.books.splice((this.books.indexOf(oldName)), 1, newName);
+//     return this.books;
+
+//   },
+  
+// };
+
+// console.log(bookShelf);
+
+// // bookShelf.updateBook("Haze", "Dungeon chronicles");
+// bookShelf.updateBook("The last kingdom", "Dune");
+
+// task 41 / 41
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+    if (this.potions.includes(newPotion)) {
+      return `Error! Potion ${newPotion} is already in your inventory!`;
+    }
+
+    this.potions.push(newPotion);
+  },
+  removePotion(potionName) {
+    const potionIndex = this.potions.indexOf(potionName);
+
+    if (potionIndex === -1) {
+      return `Potion ${potionName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1);
+  },
+  updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+    // let masIndex = 0;
+    // console.log(masIndex);
+    // const potName = [];
+    // console.log(potName.length);
+    let name = [];
+    console.log(name)
+
+    for (const potion of this.potions) {
+      console.log(potion.name.split(' '));
+      name = potion.name.split(' ');
+      // potName.push(potion.name);
+    }
+
+    // for (let i = 0; i < this.potions.length; i += 1) {
+    //   console.log(this.potions[i]);
+    //   // masIndex = this.potions[i];
+    // }
+    
+    if (potionIndex === -1) {
+      return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+  },
+  // Change code above this line
+};
+// console.log(atTheOldToad)
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
+atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+
