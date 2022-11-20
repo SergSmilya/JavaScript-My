@@ -499,5 +499,95 @@ const atTheOldToad = {
 
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
 // atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
-atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
 
+
+// Напишіть через світч пошук автора мови програмування
+// Пишемо назву мови у шаблонному рядку отримує відповідь: мова та автор
+// PHP Расмус Лердорф
+// C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота
+// Swift Кріс Латтнер
+// JS Брендан Ейх
+// Java Джеймс Гослінг
+// Python Гвідо ван Россум
+// const lang = prompt("Введіть мову програмування");
+
+
+// switch (lang?.toLowerCase()) {
+//   case "php":
+//     console.log('PHP Расмус Лердорф');
+//     break;
+//   case "c#":
+//     console.log('C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота');
+//     break;
+//   case "js":
+//     console.log('JS Брендан Ейх');
+//     break;
+//   case "java":
+//     console.log('PHP Расмус Лердорф');
+//     break;
+//   case "swift":
+//     console.log('Swift Кріс Латтнер');
+//     break;
+//   case "python":
+//     console.log('Python Гвідо ван Россум');
+//     break;
+  
+//   default: console.log('Інша мова');
+// }
+
+
+
+// Напишіть програму для заміни кожного символу в заданому рядку символом,
+// що йде наступним за ним в алфавіті
+
+// const word = prompt("Введи рядок");
+// let newWord = '';
+
+// for (let i = 0; i < word.length; i += 1) {
+//   const codLetter = word[i].charCodeAt();
+//   console.log(codLetter);
+
+//   newWord += String.fromCharCode(codLetter + 1);
+  
+
+  
+// }
+// console.log(newWord);
+
+
+// const number1 = Number(prompt('Введіть число'));
+// let isPrime = true;
+// for (let i = 2; i < number1; i += 1) {
+//     if (number1 % i === 0) {
+//         isPrime = false;
+//     }
+// }
+// console.log(isPrime);
+
+
+// const name = prompt("Ввдедіть Прізвище Імя По-батькові");
+
+// const nameArray = name.split(" ").map(letter => letter[0]).join(".");
+
+// console.log(nameArray);
+
+
+// За кожен місяць податкова нараховує на ЗП розробника 5% від суми.
+// Напишіть консольну функцію, на яку користувач вводить суму зп
+// і кількість місяців з допомогою prompt() не забуваємо, що промпт повертає рядок.
+// А податкова обчислює кінцеву суму зп без податків,
+// Суму податків всього і чистий дохід розробника за кожен місяць.
+// Для обчислення суми з урахуванням відсотків використовуйте цикл for.
+
+// const salary = prompt("Enter your salary");
+// const month = prompt("Enter the quantity of month");
+// let taxes = 0;
+// let netSalary = 0;
+
+// for (let i = 0; i < month; i += 1) {
+//     taxes += salary * 0.05;
+//     netSalary += salary * 0.95;
+// }
+// console.log(netSalary);
+// console.log(taxes);
