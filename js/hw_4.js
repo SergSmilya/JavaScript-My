@@ -220,8 +220,83 @@ const users = [
 
 //  getFriends(users);
 
+// task 34/48
 
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, totalPlayTime) => totalPlayTime + acc, 0 );
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(averagePlayTime)
+
+
+// task 35/48
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, {playtime, gamesPlayed}) => {
+
+//   return (playtime / gamesPlayed) + acc}, 0);
+
+
+// console.log(totalAveragePlaytimePerGame);
+
+// !!! task 37/48
+
+// const getTotalFriendCount = users => {
+//    return (users.reduce((acc, user) => [...acc, ...user.friends], [])).length
+// };
+// console.log(getTotalFriendCount(users))
+
+// task 38/48
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// console.log(alphabeticalAuthors)
+
+// task 43/48
+
+
+const sortByDescendingFriendCount = users => {
+   const destr = [...users].map(user=>user.friends);
+console.log(destr.sort((a, b) => destr.length - destr.length));
   
 
+  // return ([...users].flatMap(user=> user.friends)).length
+
+  // return [...users].flatMap(user=> user.friends).sort((a, b) => b.localeCompare(a))
+
+};
+
+console.log(sortByDescendingFriendCount(users));
+// console.table(sortByDescendingFriendCount(users));
 
 
+
+  
