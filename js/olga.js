@@ -290,49 +290,204 @@
 // відсутні властивості з таким ім'ям, функція 
 // повинна повернути порожній масив.
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
 
 
-function calculateTotalPrice(productName) {
-  // Change code below this line
-  let totalPrice;
-  for(let product of products){
-    const keys = Object.keys(product);
-    for( let key of keys){
-      if(productName===product[key]){
-        totalPrice = product.price * product.quantity;
-      }
-    }
-  }
-return totalPrice;
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let totalPrice;
+//   for(let product of products){
+//     const keys = Object.keys(product);
+//     for( let key of keys){
+//       if(productName===product[key]){
+//         totalPrice = product.price * product.quantity;
+//       }
+//     }
+//   }
+// return totalPrice;
 
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
 
-function getAllPropValues(propName) {
-  // Change code below this line
-  const array=[];
-  for( let product of products){
-    const keys = Object.keys(product);
-    for( let key of keys){
-      if(propName===key){
-        array.push(product[key]);
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const array=[];
+//   for( let product of products){
+//     const keys = Object.keys(product);
+//     for( let key of keys){
+//       if(propName===key){
+//         array.push(product[key]);
         
-      }
+//       }
       
-    }
+//     }
     
-  }
-  return array;
+//   }
+//   return array;
 
+//   // Change code above this line
+// }
+// // console.log(getAllPropValues("price"));
+// console.log(calculateTotalPrice("Radar"));
+
+
+// Напиши функцію makeTask(data) яка приймає один параметр data - 
+// об'єкт з наступними властивостями.
+
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, 
+// не змінюючи напряму параметр data. У новому об'єкті повинна 
+// бути властивість completed, значення якої зберігається в 
+// однойменній локальній змінній.
+
+// В параметрі data гарантовано буде тільки властивість text, а інші 
+// дві, category і priority, можуть бути відсутніми. Тоді, в новому 
+// об'єкті завдання, у властивостях category і priority повинні бути 
+// значення за замовчуванням, що зберігаються в однойменних локальних змінних.
+
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const newData = {category, priority, ...data, completed, };
+//   return newData;
+//   // Change code above this line
+// }
+// console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash"}));
+
+
+// // Change code below this line
+// function add(...args) {
+//   let total = 0;
+//   console.log(...args);
+//   for(let arg of args){
+//     total += arg;
+//   }
+//   console.log(total);
+// return total;
+//   // Change code above this line
+// }
+// add(15, 27, 45, 1);
+
+
+// // Change code below this line
+// function addOverNum(firstNumber, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if(arg>firstNumber){
+//       total += arg;
+//     }
+    
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(50, 15, 27));
+
+
+// function findMatches(firstArray, ...args) {
+//   const matches = []; // Don't change this line
+// console.log(firstArray);
+// console.log(...args);
+// for(let arg of args){
+//   if(firstArray.includes(arg)){
+//     matches.push(arg);
+//   }
+// }
+//   // Change code above this line
+//   return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     console.log(this.books.indexOf(oldName));
+//     this.books.splice(1, 1, newName);
+//     return this.books;
+
+
+//     // Change code above this line
+//   },
+// };
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+
+// const atTheOldToad = {
+//   // Change code below this line
+//  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//  getPotions(){
+// return this.potions;
+//  }
+
+//   // Change code above this line
+// };
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+// for( let potion of potions){
+//   if (potionName===potion){
+//     this.potions.remove(this.potions.indexOf(potionName), 1);
+//   }
+// }
+
+
+//     // Change code above this line
+//   },
+// };
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    console.log(this.potions)
+    return this.potions.name;
+  },
+  addPotion(newPotion) {
+    if (this.potions.includes(newPotion)) {
+      return `Error! Potion ${newPotion} is already in your inventory!`;
+    }
+
+    this.potions.push(newPotion);
+  },
+  removePotion(potionName) {
+    const potionIndex = this.potions.indexOf(potionName);
+
+    if (potionIndex === -1) {
+      return `Potion ${potionName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1);
+  },
+  updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+
+    if (potionIndex === -1) {
+      return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+  },
   // Change code above this line
-}
-// console.log(getAllPropValues("price"));
-console.log(calculateTotalPrice("Radar"));
+};
