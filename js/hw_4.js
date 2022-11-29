@@ -331,6 +331,54 @@
 
 // task 47/48 (звертався з питанням, але дійшов сам)
 
+//
+// const getSortedFriends = (users) => {
+//   return [...users]
+//     .flatMap((element) => element.friends)
+//     .filter((element, index) => element[index])
+//     .sort((a, b) => a.localeCompare(b));
+// };
+
+// const getSortedFriends = (users) => {
+//   return [...users]
+//     .flatMap((element) => element.friends)
+//     .filter(
+//       (element, index) => element.indexOf(element[index]) !== element[index]
+//     )
+//     .sort((a, b) => a.localeCompare(b));
+// };
+
+// const getSortedFriends = (users) => {
+//   return [...users]
+//     .flatMap((element) => element.friends)
+//     .filter((element, index, array) => array.indexOf(element) === index)
+//     .sort((a, b) => a.localeCompare(b));
+// };
+
+// console.log(
+//   "🚀 ~ file: hw_4.js ~ line 411 ~ getSortedFriends ~ getSortedFriends",
+//   getSortedFriends(users)
+// );
+
+// const arr = [
+//   "Goldie Gentry",
+//   "Briana Decker",
+//   "Jordan Sampson",
+//   "Eddie Strong",
+//   "Adrian Cross",
+//   "Jordan Sampson",
+//   "Eddie Strong",
+// ];
+
+// const test = arr.filter((element, index, arr) => {
+//   console.log(arr.indexOf(element) === index);
+// });
+// console.log("🚀 ~ file: hw_4.js ~ line 428 ~ test", test);
+
+// console.log("🚀 ~ file: hw_4.js ~ line 418 ~ new", arr);
+
+// task 48/48
+
 // const users = [
 //   {
 //     name: "Moore Hensley",
@@ -402,47 +450,16 @@
 //   },
 // ];
 
-// const getSortedFriends = (users) => {
-//   return [...users]
-//     .flatMap((element) => element.friends)
-//     .filter((element, index) => element[index])
-//     .sort((a, b) => a.localeCompare(b));
-// };
+// // Доповни функцію getTotalBalanceByGender(users, gender) таким чином,
+// // щоб вона повертала загальний баланс користувачів(властивість balance),
+// // стать яких(властивість gender) збігається зі значенням параметра gender.
 
-// const getSortedFriends = (users) => {
+// const getTotalBalanceByGender = (users, gender) => {
 //   return [...users]
-//     .flatMap((element) => element.friends)
-//     .filter(
-//       (element, index) => element.indexOf(element[index]) !== element[index]
-//     )
-//     .sort((a, b) => a.localeCompare(b));
+//     .filter((user) => user.gender === gender)
+//     .reduce((total, user) => user.balance + total, 0);
 // };
-
-// const getSortedFriends = (users) => {
-//   return [...users]
-//     .flatMap((element) => element.friends)
-//     .filter((element, index, array) => array.indexOf(element) === index)
-//     .sort((a, b) => a.localeCompare(b));
-// };
-
 // console.log(
-//   "🚀 ~ file: hw_4.js ~ line 411 ~ getSortedFriends ~ getSortedFriends",
-//   getSortedFriends(users)
+//   "🚀 ~ file: hw_4.js ~ line 454 ~ getTotalBalanceByGender",
+//   getTotalBalanceByGender(users, "male")
 // );
-
-// const arr = [
-//   "Goldie Gentry",
-//   "Briana Decker",
-//   "Jordan Sampson",
-//   "Eddie Strong",
-//   "Adrian Cross",
-//   "Jordan Sampson",
-//   "Eddie Strong",
-// ];
-
-// const test = arr.filter((element, index, arr) => {
-//   console.log(arr.indexOf(element) === index);
-// });
-// console.log("🚀 ~ file: hw_4.js ~ line 428 ~ test", test);
-
-// console.log("🚀 ~ file: hw_4.js ~ line 418 ~ new", arr);
