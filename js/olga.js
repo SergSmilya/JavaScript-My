@@ -19,7 +19,6 @@
 //   console.log(arr.push(array[0], array[array.length - 1]));
 //   console.log(arr)
 
-
 //   // Change code above this line
 // }
 // getExtremeElements(["Earth", "Mars", "Venus"]);
@@ -50,11 +49,11 @@
 //  // Change code below this line
 //   let total = 0;
 // for(let i = 1; i <= number; i +=1) {
-  
+
 //   total +=i;
 // console.log(total) ;
 // }
-  
+
 //   // Change code above this line
 // }
 // calculateTotal(3);
@@ -69,7 +68,6 @@
 //   console.log(total) ;
 // }
 // calculateTotalPrice([12, 85, 37, 4])
-
 
 // function findLongestWord(string) {
 //   const array = string.split(" ");
@@ -88,23 +86,21 @@
 // }
 // findLongestWord("The quick brown fox jumped over the lazy dog")
 
-
 // function createArrayOfNumbers(min, max) {
 //   const numbers = [];
 //   // Change code below this line
 //   for (let i = min; i <= max; i += 1){
 //     console.log(i);
 //     numbers.push(i);
-    
+
 //   }
-  
+
 //   // Change code above this line
 //   console.log(numbers);
 //   return numbers;
-  
+
 // }
 // createArrayOfNumbers(1, 3);
-
 
 // function filterArray(numbers, value) {
 //    // Change code below this line
@@ -121,7 +117,6 @@
 // }
 // filterArray([1, 2, 3, 4, 5], 2)
 
-
 // function getCommonElements(array1, array2) {
 //   // Change code below this line
 //   const commonElements = [];
@@ -137,7 +132,6 @@
 // }
 // getCommonElements([1, 2, 3], [2, 4])
 
-
 // function getEvenNumbers(start, end) {
 //    // Change code below this line
 //   const evenNumbers = [];
@@ -152,7 +146,6 @@
 //     // Change code above this line
 // }
 // getEvenNumbers(2, 5)
-  
 
 // function includes(array, value) {
 //   // Change code below this line
@@ -165,7 +158,6 @@
 //   // Change code above this line
 // }
 // includes([1, 2, 3, 4, 5], 3)
-
 
 // const apartment = {
 //   imgUrl: "https://via.placeholder.com/640x480",
@@ -216,19 +208,17 @@
 // function countTotalSalary(salaries) {
 //   let totalSalary = 0;
 //   // Change code below this line
-  
+
 //   const keys = Object.values(salaries);
 //   for( let key of keys){
 //     totalSalary += key;
 //   }
-
 
 //   // Change code above this line
 //   console.log(totalSalary);
 //   return totalSalary;
 // }
 // countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
-
 
 // const colors = [
 //   { hex: "#f44336", rgb: "244,67,54" },
@@ -251,15 +241,13 @@
 // console.log(hexColors);
 // console.log(rgbColors);
 
-
-// Напиши функцію getProductPrice(productName), яка 
+// Напиши функцію getProductPrice(productName), яка
 // приймає один параметр productName - назва продукту.
 //  Функція шукає об'єкт продукту з таким ім'ям
-//   (властивість name) в масиві products і повертає 
-//   його ціну (властивість price). Якщо продукт з 
-//   такою назвою не знайдений, функція повинна 
+//   (властивість name) в масиві products і повертає
+//   його ціну (властивість price). Якщо продукт з
+//   такою назвою не знайдений, функція повинна
 //   повертати null.
-
 
 // const products = [
 //   { name: "Radar", price: 1300, quantity: 4 },
@@ -281,13 +269,12 @@
 // }
 // getProductPrice("Radar");
 
-
-// Напиши функцію getAllPropValues(propName), 
-// яка приймає один параметр propName - ім'я 
-// (ключ) властивості. Функція повинна повернути 
-// масив всіх значень властивості з таким ім'ям з 
-// кожного об'єкта в масиві products. Якщо в об'єктах 
-// відсутні властивості з таким ім'ям, функція 
+// Напиши функцію getAllPropValues(propName),
+// яка приймає один параметр propName - ім'я
+// (ключ) властивості. Функція повинна повернути
+// масив всіх значень властивості з таким ім'ям з
+// кожного об'єкта в масиві products. Якщо в об'єктах
+// відсутні властивості з таким ім'ям, функція
 // повинна повернути порожній масив.
 
 // const products = [
@@ -296,8 +283,6 @@
 //   { name: "Droid", price: 400, quantity: 7 },
 //   { name: "Grip", price: 1200, quantity: 9 },
 // ];
-
-
 
 // function calculateTotalPrice(productName) {
 //   // Change code below this line
@@ -315,7 +300,6 @@
 //   // Change code above this line
 // }
 
-
 // function getAllPropValues(propName) {
 //   // Change code below this line
 //   const array=[];
@@ -324,11 +308,11 @@
 //     for( let key of keys){
 //       if(propName===key){
 //         array.push(product[key]);
-        
+
 //       }
-      
+
 //     }
-    
+
 //   }
 //   return array;
 
@@ -337,23 +321,21 @@
 // // console.log(getAllPropValues("price"));
 // console.log(calculateTotalPrice("Radar"));
 
-
-// Напиши функцію makeTask(data) яка приймає один параметр data - 
+// Напиши функцію makeTask(data) яка приймає один параметр data -
 // об'єкт з наступними властивостями.
 
 // text - текст завдання.
 // category - категорія завдання.
 // priority - пріоритет завдання.
-// Функція повинна створити і повернути новий об'єкт завдання, 
-// не змінюючи напряму параметр data. У новому об'єкті повинна 
-// бути властивість completed, значення якої зберігається в 
+// Функція повинна створити і повернути новий об'єкт завдання,
+// не змінюючи напряму параметр data. У новому об'єкті повинна
+// бути властивість completed, значення якої зберігається в
 // однойменній локальній змінній.
 
-// В параметрі data гарантовано буде тільки властивість text, а інші 
-// дві, category і priority, можуть бути відсутніми. Тоді, в новому 
-// об'єкті завдання, у властивостях category і priority повинні бути 
+// В параметрі data гарантовано буде тільки властивість text, а інші
+// дві, category і priority, можуть бути відсутніми. Тоді, в новому
+// об'єкті завдання, у властивостях category і priority повинні бути
 // значення за замовчуванням, що зберігаються в однойменних локальних змінних.
-
 
 // function makeTask(data) {
 //   const completed = false;
@@ -365,7 +347,6 @@
 //   // Change code above this line
 // }
 // console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash"}));
-
 
 // // Change code below this line
 // function add(...args) {
@@ -380,7 +361,6 @@
 // }
 // add(15, 27, 45, 1);
 
-
 // // Change code below this line
 // function addOverNum(firstNumber, ...args) {
 //   let total = 0;
@@ -389,14 +369,13 @@
 //     if(arg>firstNumber){
 //       total += arg;
 //     }
-    
+
 //   }
 
 //   return total;
 //   // Change code above this line
 // }
 // console.log(addOverNum(50, 15, 27));
-
 
 // function findMatches(firstArray, ...args) {
 //   const matches = []; // Don't change this line
@@ -413,7 +392,6 @@
 
 // console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
 
-
 // const bookShelf = {
 //   books: ["The last kingdom", "Haze", "The guardian of dreams"],
 //   updateBook(oldName, newName) {
@@ -421,7 +399,6 @@
 //     console.log(this.books.indexOf(oldName));
 //     this.books.splice(1, 1, newName);
 //     return this.books;
-
 
 //     // Change code above this line
 //   },
@@ -448,46 +425,284 @@
 //   }
 // }
 
-
 //     // Change code above this line
 //   },
 // };
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    console.log(this.potions)
-    return this.potions.name;
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     console.log(this.potions)
+//     return this.potions.name;
+//   },
+//   addPotion(newPotion) {
+//     if (this.potions.includes(newPotion)) {
+//       return `Error! Potion ${newPotion} is already in your inventory!`;
+//     }
+
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+//   // Change code above this line
+// };
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     }
+//     return onError(
+//       `There is no pizza with a name ${pizzaName} in the assortment.`
+//     );
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach((element) => {
+//     totalPrice += element;
+//   });
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach((i) => {
+//     console.log(i);
+//     if (i > value) {
+//       filteredNumbers.push(i);
+//     }
+//   });
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+//   orderedItems.forEach((item) => (totalPrice += item));
+//   console.log(totalPrice);
+// };
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// // Change code above this line
+
+// const changeEven = (numbers, value) => {
+//   // Change code below this line
+//   const newArr = [];
+//   numbers.forEach((element) => {
+//     if (element % 2 === 0) {
+//       newArr.push(element + value);
+//     }
+//   });
+//   return newArr;
+//   // Change code above this line
+// };
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// console.log(planetsLengths);
+
+// // Change code below this line
+// const getUserNames = (users) => {};
+// // Change code above this line
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// let totalT = players.reduce((totalTime, player) => {
+//   return totalTime + player.playtime;
+// }, 0);
+// console.log(totalT);
+
+// let totalG = players.reduce((totalGames, player) => {
+//   return totalGames + player.gamesPlayed;
+// }, 0);
+// console.log(totalG);
+
+// const totalAveragePlaytimePerGame = totalT / totalG;
+// console.log(totalAveragePlaytimePerGame);
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log(ascendingReleaseDates);
+
+// const alphabeticalAuthors = [...authors].sort();
+// console.log("🚀 ~ alphabeticalAuthors", alphabeticalAuthors);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = books
+//   .filter((book) => book.rating > MIN_BOOK_RATING)
+//   .map((book) => book.author)
+//   .sort((a, b) => a.localeCompare(b));
+// console.log("🚀 ~ names", names);
+
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male",
   },
-  addPotion(newPotion) {
-    if (this.potions.includes(newPotion)) {
-      return `Error! Potion ${newPotion} is already in your inventory!`;
-    }
-
-    this.potions.push(newPotion);
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female",
   },
-  removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
-
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1);
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male",
   },
-  updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1, newName);
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female",
   },
-  // Change code above this line
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+    isActive: true,
+    balance: 3951,
+    gender: "male",
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: [
+      "Jacklyn Lucas",
+      "Linda Chapman",
+      "Adrian Cross",
+      "Solomon Fokes",
+    ],
+    isActive: false,
+    balance: 1498,
+    gender: "male",
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female",
+  },
+];
+
+// Change code below this line
+const getTotalBalanceByGender = (users, gender) => {
+  return users
+    .filter((user) => user.gender === gender)
+    .reduce((total, user) => {
+      return total + user.balance;
+    }, 0);
 };
+// Change code above this line
+console.log(getTotalBalanceByGender(users, "male"));
