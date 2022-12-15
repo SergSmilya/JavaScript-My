@@ -625,84 +625,236 @@
 //   .sort((a, b) => a.localeCompare(b));
 // console.log("🚀 ~ names", names);
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male",
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female",
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male",
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female",
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
-    isActive: true,
-    balance: 3951,
-    gender: "male",
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: [
-      "Jacklyn Lucas",
-      "Linda Chapman",
-      "Adrian Cross",
-      "Solomon Fokes",
-    ],
-    isActive: false,
-    balance: 1498,
-    gender: "male",
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female",
-  },
-];
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: [
+//       "Jacklyn Lucas",
+//       "Linda Chapman",
+//       "Adrian Cross",
+//       "Solomon Fokes",
+//     ],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
 
-// Change code below this line
-const getTotalBalanceByGender = (users, gender) => {
-  return users
-    .filter((user) => user.gender === gender)
-    .reduce((total, user) => {
-      return total + user.balance;
-    }, 0);
-};
-// Change code above this line
-console.log(getTotalBalanceByGender(users, "male"));
+// // Change code below this line
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users
+//     .filter((user) => user.gender === gender)
+//     .reduce((total, user) => {
+//       return total + user.balance;
+//     }, 0);
+// };
+// // Change code above this line
+// console.log(getTotalBalanceByGender(users, "male"));
+
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.pizzas.includes(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+//   // Change code above this line
+// };
+// console.log(pizzaPalace.order("Four meats"));
+
+// class Storage {
+//   constructor([...args]) {
+//     this.items = [...args];
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//     this.items.splice(this.items.indexOf(itemToRemove), 1);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+//   getValue() {
+//     return (this.value = `${this.value}`);
+//   }
+//   padEnd(str) {
+//     return (this.value = `${this.value} ${str}`);
+//   }
+//   padStart(str) {
+//     return (this.value = `${str} ${this.value}`);
+//   }
+//   padBoth(str) {
+//     return (this.value = `${str} ${this.value} ${str}`);
+//   }
+// }
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000;
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (Car.MAX_PRICE >= newPrice) {
+//       this.#price = newPrice;
+//     }
+//     return this.#price;
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+class User {
+  email;
+
+  constructor(email) {
+    this.email = email;
+  }
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+class Admin extends User {
+  // Change code below this line
+
+  static AccessLevel = {
+    BASIC: "basic",
+    SUPERUSER: "superuser",
+  };
+
+  constructor({ email, accessLevel, blacklistedEmails = [] }) {
+    super(email);
+    this.accessLevel = accessLevel;
+    this.blacklistedEmails = [];
+  }
+  blacklist(email) {
+    return this.blacklistedEmails.push(email);
+  }
+  isBlacklisted(email) {
+    return this.blacklistedEmails.includes(email) ? true : false;
+  }
+
+  // Change code above this line
+}
+
+const mango = new Admin({
+  email: "mango@mail.com",
+  accessLevel: Admin.AccessLevel.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.accessLevel); // "superuser"
+
+mango.blacklist("poly@mail.com");
+console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+console.log(mango.isBlacklisted("mango@mail.com")); // false
+console.log(mango.isBlacklisted("poly@mail.com")); // true
